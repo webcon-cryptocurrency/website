@@ -1,6 +1,6 @@
 @font-face {
  font-family: 'Koruri Regular'; font-weight: 400;
- src: local('Koruri Ragular'), local('Koruri-Regular'), url(Koruri-Regular.eot?#iefix) format('embedded-opentype'), url(Koruri-Regular.woff) format('woff'), url(Koruri-Regular.ttf) format('truetype');
+ src: local('Koruri Ragular'), local('Koruri-Regular'), url(../font/Koruri-Regular.eot?#iefix) format('embedded-opentype'), url(../font/Koruri-Regular.woff) format('woff'), url(../font/Koruri-Regular.ttf) format('truetype');
 }
 
 body {
