@@ -49,6 +49,9 @@ h2.heading:before {
 .row {
   padding-top: 30px;
 }
+.card-body {
+  padding: 10px;
+}
 .crypto-w {
   border:none;
   height:125px;
