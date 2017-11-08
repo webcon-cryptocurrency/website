@@ -5,8 +5,7 @@
 
 body {
  font-family: "Koruri Regular" !important;
-}
-h2.heading {
+}h2.heading {
 	position: relative;
 	padding: 2px 5px 2px 37px;
 	font-size: 20px;
@@ -36,6 +35,9 @@ h2.heading:before {
 	transform: translateY(-50%);
 	border: solid 3px white;
 	border-radius: 50%;
+}
+.mark1{
+  background: linear-gradient(transparent 0%, #f6ff5f 0%);
 }
 .text-center {
   font-size: 30px;
