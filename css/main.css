@@ -6,10 +6,11 @@
 body {
  font-family: "Koruri Regular" !important;
 }
+
 h2.heading {
 	position: relative;
 	padding: 2px 5px 2px 37px;
-	font-size: 20px;
+	font-size: 25px;
 	color: #474747;
 	background: none;
 	border-bottom: 1px solid #ffd98a;
@@ -37,8 +38,18 @@ h2.heading:before {
 	border: solid 3px white;
 	border-radius: 50%;
 }
-.text-center {
-  font-size: 30px;
+.mark1{
+  background: linear-gradient(transparent 0%, #f6ff5f 0%);
+}
+.top-one{
+  max-width: 800px;
+  width:100%;
+}
+.top-text {
+  margin-left: 30px;
+  margin-left: 30px;
+  font-size: 25px;
+  text-align: center;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
