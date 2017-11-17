@@ -69,6 +69,23 @@ h2.heading:before {
   width: 100%;
   max-width: 500px;
 }
+.top-arrow{
+  text-align: center;
+}
+.left-arrow{
+  max-width: 400px;
+  width: 100%;
+}
+.left-arrow:hover {
+  opacity: 0.5;
+}
+.right-arrow{
+  max-width: 400px;
+  width:100%;
+}
+.right-arrow:hover {
+  opacity: 0.5;
+}
 @media (max-width: 1200px){
 .crypto-w {
   border: none;
