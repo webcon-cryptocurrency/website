@@ -38,6 +38,27 @@ h2.heading:before {
 	border: solid 3px white;
 	border-radius: 50%;
 }
+h3.widget {
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-left: 1.2em;
+  line-height: 1.4;
+  padding: 0.5em;
+  background: #58656e;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
+}
+
+h3.widget:before {
+  font-family: FontAwesome;
+  content: "\f023";
+  font-size: 1em;
+  left: 0;
+  top: 0;
+  color: #fff;
+}
 .mark1{
   background: linear-gradient(transparent 0%, #f6ff5f 0%);
 }
@@ -57,7 +78,7 @@ h2.heading:before {
 .navbar-brand {
   color: #fff;
 }
-.row {
+.row-top {
   padding-top: 30px;
 }
 .card-body {
@@ -90,11 +111,12 @@ h2.heading:before {
 .crypto-w {
   border: none;
   height: 125px;
-  width: 230px;
+  width: 100%;
 }
 }
 @media (max-width: 576px){
 .crypto-w {
+  text-align: center;
   border: none;
   height: 125px;
   width: 100%;
