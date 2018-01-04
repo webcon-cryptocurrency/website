@@ -6,11 +6,13 @@
 body {
  font-family: "Koruri Regular" !important;
 }
-
+.container-fluid {
+  background-color: #F4F4F2;
+}
 h2.heading {
 	position: relative;
 	padding: 2px 5px 2px 37px;
-	font-size: 25px;
+	font-size: 30px;
 	color: #474747;
 	background: none;
 	border-bottom: 1px solid #ffd98a;
@@ -107,11 +109,11 @@ h3.widget:before {
 .right-arrow:hover {
   opacity: 0.5;
 }
-@media (max-width: 1200px){
-.crypto-w {
-  border: none;
-  height: 125px;
-  width: 100%;
+.card-text {
+  font-size: 20px;
+}
+#sidebar{
+  position: absolute;
 }
 }
 @media (max-width: 576px){

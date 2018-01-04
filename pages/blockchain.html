@@ -1,0 +1,180 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>仮想通貨の新しい時代</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+  <body>
+
+    <img src="../img/logo.svg" class="img-fluid" style="max-height:100px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info bs-navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">トップ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              仮想通貨について
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="crypto-currency.html">仮想通貨って何？</a>
+              <a class="dropdown-item" href="value-of-cc.html">仮想通貨の価値</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              仮想通貨の仕組み
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="trade-flow.html">取引の流れ</a>
+              <a class="dropdown-item" href="inside-trade.html">取引の中で何が起きてるの？</a>
+              <a class="dropdown-item" href="blockchain.html">ブロックチェーンとマイニング</a>
+              <a class="dropdown-item" href="experiment.html">実験</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              仮想通貨の現状
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="spread.html">仮想通貨の普及</a>
+              <a class="dropdown-item" href="form.html">様々な仮想通貨の形態</a>
+              <a class="dropdown-item" href="task.html">仮想通貨の抱える課題</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              仮想通貨の可能性
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+              <a class="dropdown-item" href="donate.html">寄付などへの活用</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="summary.html">まとめ</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="sitemap.html">サイトマップ</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="document.html">参考文献など</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row row-top">
+        <div class="col-lg-9 col-xl-9">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-block">
+                <h2 class="heading">ブロックチェーンとマイニング</h2>
+                <p class="card-text">ここからは、仮想通貨に欠かすこと出来ない技術であるブロックチェーンについての説明を行っていきます。</p>
+                <br><br>
+                <h2 class="heading" id="one">トランザクションの保存場所</h2>
+                <p class="card-text">前ページでは、トランザクションに記入する情報と、本人を証明するための秘密鍵を用いた署名について説明をしましたが、このトランザクションを作っているのは誰なのでしょうか。<br>
+                それは通貨の送信側です。通貨を受け取る側は相手にアドレスを教えるだけで良いので、取引データは署名という操作を行う送信側のコンピュータがあれば作ることが出来ます。<br>
+                しかし、取引情報を自分のコンピュータだけに入れておいても意味がありません。<br>
+                誰が誰にいくら支払ったのかを誰もが見ることができるように、そのデータを世界中に公開しなければいけないのです。<br>
+                そのため、作られた取引のデータは取引を保存しているネットワーク上に送信されます。<br>
+                <img src="../img/block-open.jpg" class="mx-auto d-block" style="max-width: 1000px; width:100%;"><br><br>
+                ここで問題になるのは、そのデータを保存は誰が行うのか、ということです。<br>
+                例えばSNSの投稿を世界中に発信するためには、一度SNSを運営している会社のサーバーに保存して、利用者がサーバーから情報を受け取っています。<br>
+                しかし、仮想通貨には特別な権限を持った機関や企業が存在しないため、その方法は使えません。その代わりに、利用者が共同で取引のデータを保存しています。<br>
+                このようにして保存する利点は、データを幾つかに分割してそれぞれのコンピュータに保存できるため、大規模な設備を用意する必要が無いということと、<br>
+                仮に保存しているコンピューターの一部がハッキングなどを受けてデータを改竄されても、同じデータを持っている人が何人もいるため、データの訂正をすぐに行う事ができることです。<br>
+                この特性はデータを保存するコンピュータの数が多いほど顕著になり、ビットコインの様に世界中何万人という規模でデータを管理していれば、一度記録されたデータを改竄することは殆ど不可能になるのです。<br>
+                <img src="../img/hack.png" class="mx-auto d-block" style="max-width: 1000px; width:100%;"><br><br></p>
+                <br><br>
+                <h2 class="heading" id="two">ブロックチェーンとは？</h2>
+                <p class="card-text">世界中で取引のデータを管理する為に必要になるのが、ブロックチェーンという技術です。<br>
+                仮想通貨による取引は世界中で大量におこなれていて、ビットコインだけでも一日で25万近い取引が行われています。<br>
+                これらのトランザクションを逐一記録するのではなく、いくつかのトランザクションをチェックしながらひとまとめにして記録します。<br>
+                この時、一つにまとめられた物を「ブロック」と言います。ブロックは、ブロックヘッダと呼ばれるブロックについての情報を記した部分と、トランザクションを格納している二つの部分から構成されます。<br>
+                ビットコインの場合、一つのブロックに約10分間に行われた取引(2000前後)のデータが入っています。<br>
+                このブロックが鎖の様に次々と繋がって行くため、このような保存方法はブロックチェーンと呼ばれます。<br>
+                <img src="../img/chain.png" class="mx-auto d-block" style="max-width: 300px; width:100%;"><br><br></p>
+                <br><br>
+                <h2 class="heading" id="three">Proof of work(仕事の証明)</h2>
+                <p class="card-text">ところで、取引が正しいかどうかの検証を行うのは誰でしょうか。<br>
+                取引の記録と同じように、特定の人や集団が取引を承認する権利を持っているわけではありません。<br>
+                そのため、取引の正しさの保証をするのも利用者達です。<br>
+                取引の正当性の確認そのものは、過去のデータと照合して簡単に行うことができるので、特別な制限を設けなければ誰でも簡単に取引が正しいかの確認が出来ます。<br>
+                しかし、ここで一つ問題があります。<br><br>
+                <strong>もし、誰でも取引を正当なものとして承認することが出来てしまうと、不正な取引を承認させようとする人の手によって不正な取引が記録されてしまうのです。</strong><br>
+                そのため「誰にでも取引を承認できる状況を作りつつも、都合よく悪意を持った者による取引の承認は出来ない」ような仕組みを作らなければなりません。<br>
+                この仕組みを実現するために考えられたのは、<span class="mark1">「取引の承認を行おうとしている人達にくじを引かせる」という方法です。</span><br><br>
+                くじといっても、一斉に引いて誰かが必ず当たりを引くようなものではありません。<br>
+                それぞれが極めて当たる確率の低いくじを何度も引いて、誰が最初に当たりを引くかを競うのです。<br>
+                くじを引くのはコンピュータなので、当たりを引くまでの時間はコンピュータの計算速度に依存します。<br>
+                世界中の仮想通貨の利用者がコンピュータを稼働させてこの競争に参加しているため、不正な取引データを記録させるためには「世界中の仮想通貨利用者のコンピュータよりも早く計算を行う」必要があります。<br>
+                少数の悪意をもった利用者で（スーパーコンピュータを含めて）世界に何十万といる仮想通貨の利用者よりも早い計算を行うのは実質的に不可能であるため、不正データを記録する事ができないという仕組みなのです。<br>
+                <strong>このように、「善良な利用者は不正な利用者よりも数が圧倒的に多い」事を利用して不正を防ぐ方法は「Proof of work」と呼ばれます。</strong><br><br>
+                Proof of work の詳しい解説と安全性の検証については「<a href="experiment.html">実験</a>」のページを参照してください。</p>
+                <br><br>
+                <h2 class="heading" id="four">通貨の発行とマイニング</h3>
+                <p class="card-text">利用者の数が多い事を利用して安全性を維持しているProof of work ですが、これは利用者が安全性の確保のために計算をしている事を前提としています。<br>
+                しかし、コンピュータに計算をさせるには、当然ながら電気を消費します。<br>
+                仮想通貨の維持の為に、何の見返りもなく電気を消費しなければならないとしたら、誰もこんな事をしようとは思わないでしょう。<br>
+                そのため、ブロックチェーンを繋げた人には報酬が支払われるようになっているのです。<br>
+                報酬の一つは、承認手数料です。仮想通貨を支払うときに利用者が僅かに支払う手数料を合計したものが承認を行った人に支払われます。<br>
+                そして報酬のもう一つは、仮想通貨のシステムそのものから支払われる報酬です。<br>
+                つまり、仮想通貨は取引の承認によってブロックが繋がった際に自動的に発行され、採掘を行った者に報酬として与えられるのです。<br>
+                現在流通している仮想通貨は、元をたどれば全てブロックをつなげた際に発行されているのです。<br>
+                このように、ブロックをつなげると報酬が支払われるため、その獲得を目指して人々は仮想通貨の承認作業に参加してくれるのです。<br>
+                また、「あたり」を引くまで計算をし続けて報酬の獲得を目指す様子が鉱山で金を掘り当てようとする様子に似ているため、この承認作業のことを<span class="mark1">「採掘（マイニング）」</span>と呼ぶことがあります。</p>
+                <img src="../img/mining.png" class="mx-auto d-block" style="max-width: 400px; width:100%;"><br><br>
+                <a href="inside-trade.html".html"><img src="../img/arrow-back.png" class="left-arrow float-left"></a>
+                <a href="experiment.html"><img src="../img/arrow-next.png" class="left-arrow float-right"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-none d-lg-block col-lg-3 col-xl-3">
+                    <div class="card" id="sidebar" style="width: 90%;">
+                      <div class="card-header">
+                        <h4>目次</h4>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-block">
+                          <div class="list-group">
+                            <a href="#one" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">トランザクションの保存場所</h5>
+                              </div>
+                            </a>
+                            <a href="#two" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">ブロックチェーンとは？</h5>
+                              </div>
+                            </a>
+                            <a href="#three" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Proof of work(仕事の証明)</h5>
+                              </div>
+                            </a>
+                            <a href="#four" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">通貨の発行とマイニング</h5>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+              <script src="../js/bootstrap.min.js"></script>
+              <script src="../js/menu.js"></script>
+            </body>
