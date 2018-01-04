@@ -1,0 +1,223 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>仮想通貨の新しい時代</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+  <body>
+
+    <img src="../img/logo.svg" class="img-fluid" style="max-height:100px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info bs-navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">トップ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              仮想通貨について
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="crypto-currency.html">仮想通貨って何？</a>
+              <a class="dropdown-item" href="value-of-cc.html">仮想通貨の価値</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              仮想通貨の仕組み
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="trade-flow.html">取引の流れ</a>
+              <a class="dropdown-item" href="inside-trade.html">取引の中で何が起きてるの？</a>
+              <a class="dropdown-item" href="blockchain.html">ブロックチェーンとマイニング</a>
+              <a class="dropdown-item" href="experiment.html">実験</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              仮想通貨の現状
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="spread.html">仮想通貨の普及</a>
+              <a class="dropdown-item" href="form.html">様々な仮想通貨の形態</a>
+              <a class="dropdown-item" href="task.html">仮想通貨の抱える課題</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              仮想通貨の可能性
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+              <a class="dropdown-item" href="donate.html">寄付などへの活用</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="summary.html">まとめ</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="sitemap.html">サイトマップ</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="document.html">参考文献など</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row row-top">
+        <div class="col-lg-9 col-xl-9">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-block">
+                <h2 class="heading">Proof of work による安全性の実験</h2>
+                <img src="../img/banner02.png" class="mx-auto d-block" style="max-width: 600px; width:100%;"><br><br>
+                <h2 class="heading" id="one">導入1、ハッシュ計算</h2>
+                <p class="card-text">コンピュータの「くじ」として、ハッシュ計算という操作を利用します。<br>
+                ハッシュ計算とは、与えられたデータを数字と6種類のアルファベット、計16種類の文字64桁からなる文字列に変換する操作のことです。<br>
+                <img src="../img/exp00.png" class="mx-auto d-block" style="max-width: 600px; width:100%;"><br><br>
+                変換される文字列は入力するデータに応じてランダムであるため、このハッシュ値をくじのようなものとみなすことができます。<br>
+                ここで、くじの「あたり」を「ハッシュ値のはじめの二桁が0で始まるようなデータ」としてみましょう。<br>
+                すると、あたりを引く確率は「ランダムな文字列の中から、はじめの二桁が0であるハッシュ値を引き当てる」確率に等しく、文字は16種類あるので、その確率は16×16分の一、すなわち256分の一になります。<br>
+                この確率は、最初の何桁が0と一致するかの条件を帰ることで指数関数的に減少していきます。これがコンピュータの「くじ」の仕組みです。<br>
+                <br><br>
+                <h2 class="heading" id="two">導入その２、分岐</h2>
+                <p class="card-text">しかし、これだけでは悪意を持った利用者に不正な取引を含むブロックを記録する権利を渡してしまう可能性があります。<br>
+                そこで、ブロックチェーンは「分岐」がおきるようになっているのです。<br>
+                善良な利用者がブロックをつなげようとハッシュ計算をしている間に、外部からそれと異なるデータがブロックチェーンに記録されると、そのブロックはすぐ記録されず、ひとつの「枝」として伸びていきます。<br>
+                <img src="../img/exp01.png" class="mx-auto d-block" style="max-width: 600px; width:100%;"><br>
+                その後に善良な利用者によってつなげられたブロックは、また新しい枝としてブロックチェーンに記録され、二種類のブロックが平行して記録されるようになります。<br>
+                <img src="../img/exp02.png" class="mx-auto d-block" style="max-width: 600px; width:100%;"><br>
+                ２グループに分かれている利用者達は、それぞれの分岐した先の「枝」に新しいブロックをつなげようと、ハッシュ計算を再開します。<br>
+                <img src="../img/exp03.png" class="mx-auto d-block" style="max-width: 700px; width:100%;"><br>
+                やがて二つの枝の長さにある程度の差がつくと、短い方の枝がなかったことにされ、ブロックチェーンが元の一本に戻ります。<br>
+                <img src="../img/exp04.png" class="mx-auto d-block" style="max-width: 1000px; width:100%;"><br>
+                このようにすることで、計算速度の遅い悪者が運よく「あたり」を引いたとしても、計算速度の速い多数派によってなかったことにされてしまうのです。<br><br>
+                <strong>ハッシュ計算の仕組みがわかったところで、早速実験を行いましょう。</strong></p><br><br>
+                <h2 class="heading" id="three">実験の目的</h2>
+                <p class="card-text">善良な利用者によってつながれているブロックチェーンに、不正なデータの記録を試みる利用者がデータの改ざんを目論んだことを想定し、擬似的なブロックチェーンシステムでシュミレーションを行うことで、安全性の検証をする。</p>
+                <br><br>
+                <h2 class="heading" id="four">用意するもの</h2>
+                  <ul>
+                    <li><p class="card-text">Javaの実行環境(パソコン)</p></li>
+                    <li><p class="card-text">善良な利用者を模したハッシュ計算プログラム(善良ノードと呼ぶ)</p></li>
+                    <li><p class="card-text">不正なデータの登録を図る利用者を模したハッシュ計算プログラム(敵性ノードと呼ぶ)</p></li>
+                    <li><p class="card-text">ハッシュ計算に応じて擬似ブロックチェーンの記録を行うプログラム(観測者と呼ぶ)</p></li>
+                  </ul>
+                </p>
+                <br><br>
+                <h2 class="heading" id="five">手順</h2>
+                <p class="card-text">(1)全世界のコンピュータのうち、およそ二割がブロックチェーンの改竄を試みることを想定し、善良ノードと敵性ノードの計算速度の比が9:2になるようにプログラムを起動させる。<br>
+                (2)善良ノードと敵性ノードがそれぞれ取引データを模したデータとランダムな数字を用いてハッシュ計算を行う。<br>
+                (3)ハッシュ計算を行い、ハッシュ値の始めの6桁が0で始まるものを「あたり」とみなし、観測プログラムを通して取引データを記録する。<br>
+                (4)善良ノードと敵性ノードは平行してブロックの追加を行い、つながるブロックの個数に5個以上の差がついたら、長いほうを正しいブロックと判断し、短いデータを破棄する。<br>
+                (5)ブロックが100個つながるまでブロックがつながる様子を記録し、これを10回繰り返した。</p>
+                <br><br>
+                <h2 class="heading" id="six">実験の様子</h2>
+                <p class="card-text">実験において、Java Appletを用いてブロックがつながっていく様子を可視化しました。</p>
+                <video src="../video/exp.mp4" controls width="100%">
+                <p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
+                </video>
+                <h2 class="heading" id="seven">実験の結果</h2>
+                  <ul>
+                    <li><p class="card-text">実験を行った結果、ブロックが100つながるまでに分岐が起きた回数は最大10回、最低6回、平均して8.6回だった。中央値は7回だった</p></li>
+                    <li><p class="card-text">また、分岐した枝部分につながったブロック数は最高14個、最低1個、平均2.5個であった。中央値は2個だった。</p></li>
+                    <li><p class="card-text">敵性ノードが不正な取引データの記録に成功することはなかった。</p></li>
+                  </ul>
+                <br><br>
+                <h2 class="heading" id="eight">考察</h2>
+                <p class="card-text">実験の結果から、計算速度の遅い方が時々ハッシュ計算に成功しても、ほとんどの場合は2,3個のブロックをつなげる間に善良ノードによって破棄されてしまっていることがわかる。<br>
+                今回は全世界の二割のコンピュータがブロックチェーンの改竄を試みることを想定したが、実際に全世界のコンピュータの二割に匹敵する計算速度を確保するのはスーパーコンピュータを用いても困難なので、<br>
+                <storong>世界中のスーパーコンピュータがまとめてハッキングされるなどの事態に陥らない限りは不可能であると考えられる。</strong></p>
+                <br><br>
+                <h2 class="heading" id="nine">その他</h2>
+                <p class="card-text">善良ノードと敵性ノードの数の比を6:5にすると、善良ノードのほうが多いにもかかわらず、不正なブロックが記録されることがあった。<br>
+                これは、計算速度の比をプログラムの起動数で調整していたため、計算速度の比が厳密ではなかったことや、一度に計算する数が十分大きいとはいえず数学的な値へ収束しにくかったこと、実験のために実際よりもハッシュ値の「あたり」を引く頻度を高く設定していたこと等が原因として考えられる。</p>
+                <br><br>
+                <h2 class="heading" id="ten">まとめ</h2>
+                <p class="card-text">bitcoinの創始者であるサトシ・ナカモトの発表した論文には、「Proof of workシステムを破るほど高い計算能力を有しているならば、全うに承認作業を行ってマイニングによる利益を得たほうが得をする」とあります。<br>
+                また、不正対策が不完全であることがわかってしまえば、仮想通貨は信頼を失い、改竄して手に入れた仮想通貨の価値が下がってしまいます。<br>
+                この二つのことから、利益を上げるために仮想通貨を改竄するのは割りにあわなくなってしまいます。<br>
+                こうして、さまざまな高度な技術を組み合わせることによって、仮想通貨は通貨としての価値を維持できているのです。</p>
+                <a href="blockchain.html"><img src="../img/arrow-back.png" class="left-arrow float-left"></a>
+                <a href="spread.html"><img src="../img/arrow-next.png" class="left-arrow float-right"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-none d-lg-block col-lg-3 col-xl-3">
+                    <div class="card" id="sidebar" style="width: 90%;">
+                      <div class="card-header">
+                        <h4>目次</h4>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-block">
+                          <div class="list-group">
+                            <a href="#one" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">導入1、ハッシュ計算</h5>
+                              </div>
+                            </a>
+                            <a href="#two" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">導入その２、分岐</h5>
+                              </div>
+                            </a>
+                            <a href="#three" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">実験の目的</h5>
+                              </div>
+                            </a>
+                            <a href="#four" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">用意するもの</h5>
+                              </div>
+                            </a>
+                            <a href="#five" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">手順</h5>
+                              </div>
+                            </a>
+                            <a href="#six" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">実験の様子</h5>
+                              </div>
+                            </a>
+                            <a href="#seven" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">実験の結果</h5>
+                              </div>
+                            </a>
+                            <a href="#eight" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">考察</h5>
+                              </div>
+                            </a>
+                            <a href="#nine" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">その他</h5>
+                              </div>
+                            </a>
+                            <a href="#ten" class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">まとめ</h5>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+              <script src="../js/bootstrap.min.js"></script>
+              <script src="../js/menu.js"></script>
+            </body>
